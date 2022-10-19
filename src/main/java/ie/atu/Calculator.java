@@ -14,6 +14,8 @@ public class Calculator {
         return calcValue;
     }
 
+
+
     public Calculator(int startValue) {
         if (startValue > 5) {
             calcValue = startValue;
