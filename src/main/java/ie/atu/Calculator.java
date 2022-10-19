@@ -30,6 +30,14 @@ public class Calculator {
         return calcValue;
     }
 
+    public int divide()
+    {
+        int firstNum = 4;
+        int secondNum = 2;
+        calcValue = firstNum / secondNum;
+        return calcValue;
+    }
+
     public Calculator(int startValue) {
         if (startValue > 5) {
             calcValue = startValue;
