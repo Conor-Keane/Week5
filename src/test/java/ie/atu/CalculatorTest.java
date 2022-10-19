@@ -32,6 +32,12 @@ class CalculatorTest {
     }
 
     @Test
+    void testDivide()
+    {
+        assertEquals(2, myCalc.divide());
+    }
+
+    @Test
     void testCalculator()
     {
         Exception exMessage = assertThrows(IllegalArgumentException.class, () -> { new Calculator(4);});
