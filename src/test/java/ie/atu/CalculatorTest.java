@@ -26,6 +26,12 @@ class CalculatorTest {
     }
 
     @Test
+    void testMultiply()
+    {
+        assertEquals(2, myCalc.multiply());
+    }
+
+    @Test
     void testCalculator()
     {
         Exception exMessage = assertThrows(IllegalArgumentException.class, () -> { new Calculator(4);});
