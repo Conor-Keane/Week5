@@ -13,4 +13,12 @@ public class Calculator {
         calcValue = firstNum + secondNum;
         return calcValue;
     }
+
+    public Calculator(int startValue) {
+        if (startValue > 5) {
+            calcValue = startValue;
+        } else {
+            throw new IllegalArgumentException("This is not a valid number");
+        }
+    }
 }

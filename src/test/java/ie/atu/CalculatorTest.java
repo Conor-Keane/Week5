@@ -19,8 +19,17 @@ class CalculatorTest {
         assertEquals(6, myCalc.add());
     }
 
+    @Test
+    void testCalculator()
+    {
+        Exception exMessage = assertThrows(IllegalArgumentException.class, () -> { new Calculator(4);});
+        assertEquals("This is not a valid number", exMessage.getMessage());
+    }
+
     @AfterEach
     void tearDown() {
 
     }
+
+
 }
